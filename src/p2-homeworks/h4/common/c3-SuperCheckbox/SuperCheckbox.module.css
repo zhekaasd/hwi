@@ -1,0 +1,15 @@
+.checkbox {
+    color: gold;
+}
+
+input[type=checkbox] {
+
+    background-color: #e20707;
+}
+
+.checkbox:checked {
+}
+
+.spanClassName {
+
+}

@@ -1,0 +1,51 @@
+.wrapper {
+    min-width: 250px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.sortButton {
+    margin: 20px 15px 10px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background: none;
+    color: darkgray;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.all {
+    color: black;
+}
+
+.high {
+    color: #e20707;
+}
+
+.hoverHigh:hover {
+    color: #e20707;
+}
+
+.low {
+    color: #0ce513;
+}
+
+.hoverLow:hover {
+    color: #0ce513;
+}
+
+.middle {
+    color: #0772e3;
+}
+
+.hoverMiddle:hover {
+    color: #0772e3;
+}

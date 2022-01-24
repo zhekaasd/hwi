@@ -1,0 +1,54 @@
+.messageWrapper {
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+.messageData {
+    display: flex;
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 0 10px;
+    max-width: 350px;
+    position: relative;
+}
+
+.messageData::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 18px solid lightblue;
+}
+
+.messageInner {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.userName {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.message {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.date {
+    align-self: flex-end;
+    margin-bottom: 5px;
+}

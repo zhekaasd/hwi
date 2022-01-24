@@ -1,0 +1,32 @@
+.superInputWrapper {
+    margin: 4px 0;
+}
+
+.superInput {
+    padding: 14px 16px;
+    width: 330px;
+    outline: none;
+    border: 1px solid darkgray;
+    border-radius: 6px;
+}
+
+.superInput:focus {
+    border: 1px solid darkviolet;
+}
+
+
+.errorInput {
+    padding: 14px 16px;
+    width: 330px;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+
+
+
+.error {
+    color: red;
+    display: block;
+    text-align: center;
+}

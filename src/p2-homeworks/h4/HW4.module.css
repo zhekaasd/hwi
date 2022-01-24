@@ -1,0 +1,18 @@
+.blue {
+
+}
+
+.blue:focus {
+    border: 1px solid hotpink;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testSpanError {
+    /*color: blue;*/
+    background-color: yellow;
+}

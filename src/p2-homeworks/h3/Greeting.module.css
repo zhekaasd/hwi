@@ -1,0 +1,60 @@
+.someClass {
+    padding: 15px 15px 5px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.someClass input {
+    width: 150px;
+    margin-right: 25px;
+    padding: 10px 10px 2px 2px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #697184;
+    background-color: #f2f1ef;
+}
+
+.someClass button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #697184;
+    margin-right: 25px;
+    color: #697184;
+}
+
+.someClass div {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 1px dashed #697184;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #f2f1ef;
+}
+
+.someClass div span {
+    margin: 0 auto;
+    font-weight: bold;
+    color: #697184;
+}
+
+
+.someClass .error {
+    border-bottom: 1px solid red;
+}
+
+.errorMessage {
+    color: red;
+    padding: 0 15px;
+    display: inline-block;
+    width: 137px;
+    text-align: center;
+}
+
+.someClass .errorCount {
+    background-color: firebrick;
+}
+
+.someClass .errorCount span {
+    color: #f2f1ef;
+}

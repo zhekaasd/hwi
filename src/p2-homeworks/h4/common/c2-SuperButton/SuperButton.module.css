@@ -1,0 +1,31 @@
+.default {
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 48px;
+    border: none;
+    background-color: darkviolet;
+    color: white;
+    border-radius: 6px;
+    margin: 6px 0;
+    cursor: pointer;
+    width: 120px;
+}
+
+.default:disabled {
+    background: rgba(84,45,147,0.8);
+    color: darkgrey;
+    cursor: default;
+}
+
+.red {
+    background: firebrick;
+    padding: 0 16px;
+    font-size: 20px;
+    line-height: 48px;
+    width: 120px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 6px 0;
+    cursor: pointer;
+}
