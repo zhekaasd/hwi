@@ -1,0 +1,11 @@
+.content {
+    margin-left: 70px;
+    padding: 0 20px;
+    transition: .4s;
+}
+
+.editableContent {
+    margin-left: 260px;
+    padding: 0 20px;
+    transition: .4s;
+}

@@ -1,5 +1,5 @@
 .default {
-    padding: 0 16px;
+    padding: 0 22px;
     font-size: 20px;
     line-height: 48px;
     border: none;
@@ -8,7 +8,6 @@
     border-radius: 6px;
     margin: 6px 0;
     cursor: pointer;
-    width: 120px;
 }
 
 .default:disabled {
@@ -19,10 +18,9 @@
 
 .red {
     background: firebrick;
-    padding: 0 16px;
+    padding: 0 22px;
     font-size: 20px;
     line-height: 48px;
-    width: 120px;
     border: none;
     color: white;
     border-radius: 6px;

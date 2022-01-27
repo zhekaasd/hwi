@@ -10,32 +10,33 @@
     padding: 10px 10px 2px 2px;
     outline: none;
     border: none;
-    border-bottom: 1px solid #697184;
-    background-color: #f2f1ef;
+    border-bottom: 1px solid #194F92;
+    background-color: #ade3b9;
 }
 
 .someClass button {
     padding: 5px 15px;
     border-radius: 5px;
-    border: 1px solid #697184;
+    border: 1px solid #194F92;
     margin-right: 25px;
-    color: #697184;
+    color: #194F92;
+    background-color: #ade3b9;
 }
 
 .someClass div {
     display: flex;
     width: 30px;
     height: 30px;
-    border: 1px dashed #697184;
+    border: 1px dashed #194F92;
     align-items: center;
     border-radius: 100%;
-    background-color: #f2f1ef;
+    background-color: #ade3b9;
 }
 
 .someClass div span {
     margin: 0 auto;
     font-weight: bold;
-    color: #697184;
+    color: #194F92;
 }
 
 
@@ -56,5 +57,5 @@
 }
 
 .someClass .errorCount span {
-    color: #f2f1ef;
+    color: #ade3b9;
 }
