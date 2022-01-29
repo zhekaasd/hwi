@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hwi/static/css/main.cfa72f51.chunk.css",
+    "main.js": "/hwi/static/js/main.da915251.chunk.js",
+    "main.js.map": "/hwi/static/js/main.da915251.chunk.js.map",
+    "runtime-main.js": "/hwi/static/js/runtime-main.1c31adfe.js",
+    "runtime-main.js.map": "/hwi/static/js/runtime-main.1c31adfe.js.map",
+    "static/js/2.e67589fa.chunk.js": "/hwi/static/js/2.e67589fa.chunk.js",
+    "static/js/2.e67589fa.chunk.js.map": "/hwi/static/js/2.e67589fa.chunk.js.map",
+    "index.html": "/hwi/index.html",
+    "precache-manifest.b4317e842023815660bdcf0fb888ba98.js": "/hwi/precache-manifest.b4317e842023815660bdcf0fb888ba98.js",
+    "service-worker.js": "/hwi/service-worker.js",
+    "static/css/main.cfa72f51.chunk.css.map": "/hwi/static/css/main.cfa72f51.chunk.css.map",
+    "static/js/2.e67589fa.chunk.js.LICENSE.txt": "/hwi/static/js/2.e67589fa.chunk.js.LICENSE.txt",
+    "static/media/3fcf565ccc553afcfd89858c97304705.gif": "/hwi/static/media/3fcf565ccc553afcfd89858c97304705.24f1671b.gif",
+    "static/media/frown-open-solid.svg": "/hwi/static/media/frown-open-solid.081c4bec.svg",
+    "static/media/frown-solid.svg": "/hwi/static/media/frown-solid.bd3b1185.svg",
+    "static/media/sad-tear-solid.svg": "/hwi/static/media/sad-tear-solid.722af8ac.svg",
+    "static/media/trash-solid.svg": "/hwi/static/media/trash-solid.28851b1e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c31adfe.js",
+    "static/js/2.e67589fa.chunk.js",
+    "static/css/main.cfa72f51.chunk.css",
+    "static/js/main.da915251.chunk.js"
+  ]
+}
