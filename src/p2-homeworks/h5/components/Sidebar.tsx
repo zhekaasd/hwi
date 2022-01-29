@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom";
-import React, {useState} from "react";
+import React from "react";
 
 import s from "./Sidebar.module.css";
 import icon1 from "../assets/icons/frown-solid.svg";

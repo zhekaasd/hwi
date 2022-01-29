@@ -1,0 +1,16 @@
+.wrp button:nth-child(3) {
+    margin-right: 20px !important;
+}
+
+.default {
+    font-size: 26px;
+    cursor: pointer;
+    display: inline-block;
+    width: 300px;
+    height: 54px;
+    word-break: break-word;
+}
+
+.default:hover {
+    color: darkgray;
+}

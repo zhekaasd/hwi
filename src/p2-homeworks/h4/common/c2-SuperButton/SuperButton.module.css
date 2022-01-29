@@ -1,13 +1,16 @@
 .default {
     padding: 0 22px;
     font-size: 20px;
-    line-height: 48px;
+    line-height: 32px;
     border: none;
     background-color: darkviolet;
     color: white;
     border-radius: 6px;
-    margin: 6px 0;
     cursor: pointer;
+}
+
+.default:hover {
+    color: #282c34;
 }
 
 .default:disabled {
@@ -20,10 +23,9 @@
     background: firebrick;
     padding: 0 22px;
     font-size: 20px;
-    line-height: 48px;
+    line-height: 32px;
     border: none;
     color: white;
     border-radius: 6px;
-    margin: 6px 0;
     cursor: pointer;
 }

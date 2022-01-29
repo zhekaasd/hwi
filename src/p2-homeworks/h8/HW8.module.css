@@ -1,0 +1,34 @@
+.hmw8 {
+
+}
+
+.hmw8 button {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.usersListBlock {
+    margin-top: 25px;
+    display: flex;
+}
+
+.sortButtonBlock{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.sortButtonBlock button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.checkButtonBlock button:first-child {
+    margin-right: 10px;
+}

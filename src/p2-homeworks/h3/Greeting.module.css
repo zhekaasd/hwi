@@ -23,6 +23,12 @@
     background-color: #ade3b9;
 }
 
+.someClass button:disabled {
+    color: grey;
+    border-color: grey;
+    opacity: .8;
+}
+
 .someClass div {
     display: flex;
     width: 30px;
