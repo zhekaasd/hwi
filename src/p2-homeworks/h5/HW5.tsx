@@ -15,7 +15,7 @@ function HW5() {
 
             <Header editMode={editMode} setEditMode={setEditMode} />
             <div style={{paddingTop: '100px'}}>
-                <Sidebar editMode={editMode} />
+                <Sidebar editMode={editMode} setEditMode={setEditMode}  />
                 <RoutesComponent editMode={editMode} />
             </div>
 
