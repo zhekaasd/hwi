@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 type SuperDoubleRangePropsType = {
-    onChangeRange?: (value: [number, number]) => void
-    value?: [number, number]
+    //onChangeRange?: (value: [number, number]) => void
+    onChangeRange?: (v: any) => void
+    //value?: [number, number]
+    value?: any
     // min, max, step, disable, ...
 }
 
@@ -21,4 +23,4 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     )
 }
 
-export default SuperDoubleRange
+export default SuperDoubleRange;

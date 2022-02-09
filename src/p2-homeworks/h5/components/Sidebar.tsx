@@ -7,15 +7,15 @@ import icon2 from "../assets/icons/frown-open-solid.svg";
 import icon3 from "../assets/icons/sad-tear-solid.svg";
 
 
-const Sidebar = (props: { editMode: boolean, setEditMode:(value: boolean) => void }) => {
+const Sidebar = (props: { editMode: boolean, setEditMode: (value: boolean) => void }) => {
 
     const setClass = (value: boolean) => {
         return value ? s.active : s.ccc;
     }
 
     return <div
-        onMouseOver={() => props.setEditMode(true)}
-        onMouseOut={() => props.setEditMode(false)}
+        // onMouseOver={() => props.setEditMode(true)}
+        // onMouseOut={() => props.setEditMode(false)}
         className={props.editMode ? s.sidebar : s.editableSidebar}>
 
         <NavLink className={(navDate) => s.navItem + ' ' + setClass(navDate.isActive)} to={'/pre-junior'}>
