@@ -1,0 +1,26 @@
+.sliderBlock {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 20px;
+}
+
+.sliderBlock span {
+    padding: 0 6px;
+}
+
+.doubleSliderBlock {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+    margin: 40px 20px;
+}
+
+.doubleSliderBlock div {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}

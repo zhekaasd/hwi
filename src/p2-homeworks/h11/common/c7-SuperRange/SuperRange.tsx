@@ -27,13 +27,15 @@ const SuperRange: React.FC<SuperRangePropsType> = (
 
     const finalRangeClassName = `${s.range} ${className ? className : ''}`
 
+
     return (
         <>
             <input
+                style={{width: '500px'}}
                 type={'range'}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
-
+                value={restProps.value}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
         </>

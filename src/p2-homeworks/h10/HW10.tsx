@@ -1,9 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "./bll/store";
 import {loadingAC} from "./bll/loadingReducer";
-import {Simulate} from "react-dom/test-utils";
 import photo from "./assets/loadingImage.webp";
 
 function HW10() {
