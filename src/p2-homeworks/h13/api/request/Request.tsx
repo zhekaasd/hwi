@@ -1,19 +1,12 @@
 import * as React from 'react';
+import {useState} from 'react';
 import SuperCheckbox from "../../../h4/common/c3-SuperCheckbox/SuperCheckbox";
 import SuperButton from "../../../h4/common/c2-SuperButton/SuperButton";
-import {useEffect, useState} from "react";
 import {requestAPI} from "../requestAPI";
 
 import s from "./Request.module.css";
 
 type PropsRequestType = {};
-
-enum Data {
-    defaultValue = 'fff',
-    responseValue = 'fff',
-    errorValue = 'fff',
-};
-
 
 function Request(props: PropsRequestType) {
 
@@ -40,17 +33,18 @@ function Request(props: PropsRequestType) {
     return (
         <div className={s.container}>
 
-            <h1 className={error ? s.requestError : value === defaultValue ? s.default :  s.response}>
+            <h1 className={error ? s.requestError : value === defaultValue ? s.default : s.response}>
                 {
                     error ? error
-                    : value === defaultValue ? defaultValue
-                        : value
+                        : value === defaultValue ? defaultValue
+                            : value
                 }
             </h1>
 
             <SuperButton onClick={getData}
-            > add
+            > request
             </SuperButton>
+
             <SuperCheckbox
                 checked={checked}
                 onChangeChecked={setChecked}
@@ -58,7 +52,6 @@ function Request(props: PropsRequestType) {
         </div>
     );
 }
-
 
 
 export default Request;
