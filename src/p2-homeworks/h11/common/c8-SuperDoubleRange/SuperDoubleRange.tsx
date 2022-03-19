@@ -3,16 +3,17 @@ import React from "react";
 
 
 type SuperDoubleRangePropsType = {
-    //onChangeRange?: (value: [number, number]) => void
     onChangeRange?: (v: number[]) => void
     value?: number[]
-    // min, max, step, disable, ...
+    min?: number
+    max?: number
+    step?: number
 }
 
 const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     {
         onChangeRange, value,
-        // min, max, step, disable, ...
+        min, max, step
     }
 ) => {
 
@@ -23,7 +24,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     return (
         <>
             <Slider
-                getAriaLabel={() => 'Temperature range'}
                 value={value}
                 onChange={onChangeCallback}
                 valueLabelDisplay="auto"

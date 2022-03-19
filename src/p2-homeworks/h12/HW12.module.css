@@ -1,3 +1,18 @@
+.wrapper {
+
+}
+
+.wrapper span {
+    padding: 10px;
+    display: block;
+    font-weight: 700;
+}
+
+.wrapper select {
+    margin: 10px;
+    padding: 5px;
+}
+
 .dark {
     background: dimgrey;
 }
