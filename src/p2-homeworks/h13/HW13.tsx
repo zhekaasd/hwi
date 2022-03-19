@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import Request from "./request/Request";
+import Request from "./api/request/Request";
 
 type HW13PropsType = {
 

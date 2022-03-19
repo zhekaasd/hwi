@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.default {
+    border: .5rem solid black;
+    color: dimgray;
+    padding: 20px 0;
+}
+
+.response {
+    border: .5rem solid darkblue;
+    color: blue;
+    padding: 20px 0;
+}
+
+.requestError {
+    border: .5rem solid darkred;
+    color: red;
+    padding: 20px 0;
+}
