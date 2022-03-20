@@ -76,9 +76,9 @@ function HW4() {
             {/*для личного творчества, могу проверить*/}
                 <div className={s.column2}>
 
+                    <MUISuperInputText margin={'normal'} styleComponent={'primary'}  />
 
-                    <MUISuperInputText />
-
+                    <MUISuperInputText margin={'normal'} styleComponent={'secondary'}  />
 
                     <MUISuperInputText value={text}
                                        onChangeText={setText}
@@ -86,8 +86,6 @@ function HW4() {
                                        error={error}
                                        margin={'normal'}
                     />
-
-
 
                     {/*<AlternativeSuperButton/>*/}
                     {/*<AlternativeSuperCheckbox/>*/}

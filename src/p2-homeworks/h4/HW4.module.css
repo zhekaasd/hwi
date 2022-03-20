@@ -21,10 +21,6 @@
     flex-direction: column;
     align-items: center;
 }
-
-.column2 input {
-}
-
 .testSpanError {
     /*color: blue;*/
     background-color: yellow;
