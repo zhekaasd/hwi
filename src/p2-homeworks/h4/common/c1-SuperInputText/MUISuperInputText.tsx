@@ -18,25 +18,28 @@ type MUIInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & { // и + е�
 
 
 const NameComponent = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'green',
-    },
     '& .MuiInput-underline:after': {
-        borderBottomColor: 'green',
+        borderWidth: '5px',
+        borderBottomColor: 'blue'
     },
     '& .MuiOutlinedInput-root': {
+        // input default border color
         '& fieldset': {
-            borderColor: 'gold',
-            borderWidth: '4px'
+            //borderColor: 'red',
         },
         '&:hover fieldset': {
-            borderColor: 'yellow',
+        // input default hover style
+            //borderColor: 'blue',
         },
         '&.Mui-focused fieldset': {
-            borderColor: 'green',
+        // input default focus style
+            //borderColor: 'blue',
+            //borderWidth: '5px'
         },
     },
 });
+
+
 
 const MUISuperInputText: React.FC<MUIInputTextPropsType> = (
     {
