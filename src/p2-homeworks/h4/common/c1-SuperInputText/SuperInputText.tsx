@@ -45,12 +45,13 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     return (
         <div className={s.superInputWrapper}>
             <input
+                value={restProps.value}
                 type={'text'}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
                 className={finalInputClassName}
-                // placeholder={error ? '' : 'Send text..'} //tested
-                placeholder={'Send text..'}
+                // placeholder={error ? '' : 'Enter text..'} //tested
+                placeholder={'Enter text..'}
                 autoFocus={error ? true : false}
 
 

@@ -3,6 +3,7 @@ import SuperInputText from './common/c1-SuperInputText/SuperInputText'
 import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
+import MUISuperInputText from "./common/c1-SuperInputText/MUISuperInputText";
 
 function HW4() {
 
@@ -38,7 +39,7 @@ function HW4() {
                 />
 
                 <SuperInputText
-                     //className={s.blue} // проверьте, рабоет ли смешивание классов
+                     //className={s.blue}  // проверьте, рабоет ли смешивание классов
                 />
 
                 ----------------------------------------------------
@@ -73,9 +74,24 @@ function HW4() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperInputText/>*/}
-            {/*<AlternativeSuperButton/>*/}
-            {/*<AlternativeSuperCheckbox/>*/}
+                <div className={s.column2}>
+
+
+                    <MUISuperInputText />
+
+
+                    <MUISuperInputText value={text}
+                                       onChangeText={setText}
+                                       onEnter={showAlert}
+                                       error={error}
+                                       margin={'normal'}
+                    />
+
+
+
+                    {/*<AlternativeSuperButton/>*/}
+                    {/*<AlternativeSuperCheckbox/>*/}
+                </div>
             <hr/>
         </div>
     )

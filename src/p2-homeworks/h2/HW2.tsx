@@ -14,8 +14,9 @@ export type FilterType = 'all' | AffairPriorityType
 // constants
 const defaultAffairs: Array<AffairType> = [ // need to fix any
     {_id: 1, name: 'React' , priority: 'high'},
-    {_id: 7, name: 'React Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet' +
-            ' aspernatur at cumque dolores ducimus error et iure iusto laboriosam laudantium, minima nisi nostrum placeat recusandae, rerum saepe sed voluptas.' , priority: 'high'},
+    {_id: 7, name: 'React Lorem ipsum dolor sit amet, consectetur adipisicing elit. ' +
+            'Ad amet aspernatur at cumque dolores ducimus error et iure iusto laboriosam laudantium, minima ' +
+            'nisi nostrum placeat recusandae, rerum saepe sed voluptas.' , priority: 'high'},
     {_id: 2, name: 'anime', priority: 'low'},
     {_id: 3, name: 'games', priority: 'low'},
     {_id: 4, name: 'work', priority: 'high'},
