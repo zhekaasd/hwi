@@ -18,7 +18,7 @@ function HW6() {
     }
 
     return (
-        <div className={s.wrp}>
+        <div className={s.wrapper}>
             <hr/>
             homeworks 6
 

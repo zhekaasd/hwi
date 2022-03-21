@@ -17,7 +17,7 @@ type MUIInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & { // и + е�
     styleComponent?: string
 }
 
-
+/*--- Default style input component ---*/
 const Default = styled(TextField)({
     '& label.Mui-focused': {
         color: 'green',
@@ -39,52 +39,10 @@ const Default = styled(TextField)({
     },
 });
 
-const Secondary = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'green',
-    },
-    '& .MuiOutlinedInput-root': {
-        // input default border color
-        '& fieldset': {
-            borderColor: '#32CD32'
-        },
-        '&:hover fieldset': {
-            // input default hover style
-            borderColor: '#138808'
-        },
-        '&.Mui-focused fieldset': {
-            // input default focus style
-            borderColor: '#138808',
-            borderWidth: '3px'
-        },
-    },
-});
-
-const Primary = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'green',
-    },
-    '& .MuiOutlinedInput-root': {
-        // input default border color
-        '& fieldset': {
-            borderColor: '#3A75C4'
-        },
-        '&:hover fieldset': {
-            // input default hover style
-            borderColor: '#0000FF'
-        },
-        '&.Mui-focused fieldset': {
-            // input default focus style
-            borderColor: '#0000FF',
-            borderWidth: '3px'
-        },
-    },
-});
 
 
 const MUISuperInputText: React.FC<MUIInputTextPropsType> = (
     {
-        //type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeText, onKeyPress, onEnter,
         error, className, spanClassName,
         margin, styleComponent,
@@ -111,26 +69,7 @@ const MUISuperInputText: React.FC<MUIInputTextPropsType> = (
 
     return (
         <>
-            {
-                styleComponent === 'primary' ? <Primary
-                    helperText={error}
-                    error={!!error} // error ? true : false
-                    onChange={onChangeCallback}
-                    onKeyPress={onKeyPressCallback}
-                    size={'small'}
-                    placeholder={'Enter text'}
-                    value={restProps.value}
-                    margin={margin}
-                /> : styleComponent === 'secondary' ? <Secondary
-                    helperText={error}
-                    error={!!error} // error ? true : false
-                    onChange={onChangeCallback}
-                    onKeyPress={onKeyPressCallback}
-                    size={'small'}
-                    placeholder={'Enter text'}
-                    value={restProps.value}
-                    margin={margin}
-                /> : <Default
+             <Default
                     helperText={error}
                     error={!!error} // error ? true : false
                     onChange={onChangeCallback}
@@ -140,7 +79,6 @@ const MUISuperInputText: React.FC<MUIInputTextPropsType> = (
                     value={restProps.value}
                     margin={margin}
                 />
-            }
         </>
 
 )

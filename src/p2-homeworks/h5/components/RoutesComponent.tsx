@@ -38,4 +38,4 @@ function RoutesComponent(props: {editMode: boolean}) {
     )
 }
 
-export default RoutesComponent
+export default RoutesComponent;

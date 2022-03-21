@@ -4,6 +4,8 @@ import s from './HW4.module.css'
 import SuperButton from './common/c2-SuperButton/SuperButton'
 import SuperCheckbox from './common/c3-SuperCheckbox/SuperCheckbox'
 import MUISuperInputText from "./common/c1-SuperInputText/MUISuperInputText";
+import MUISuperButton from "./common/c2-SuperButton/MUISuperButton";
+import MUISuperCheckbox from "./common/c3-SuperCheckbox/MUISuperCheckbox";
 
 function HW4() {
 
@@ -21,8 +23,6 @@ function HW4() {
 
     const [checked, setChecked] = useState<boolean>(false)
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => setChecked(e.currentTarget.checked);
-
-
 
     return (
         <div>
@@ -64,7 +64,7 @@ function HW4() {
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
-                >
+                > ??
                     {/*some text // этот текст попадёт в children*/}
                 </SuperCheckbox>
 
@@ -76,9 +76,6 @@ function HW4() {
             {/*для личного творчества, могу проверить*/}
                 <div className={s.column2}>
 
-                    <MUISuperInputText margin={'normal'} styleComponent={'primary'}  />
-
-                    <MUISuperInputText margin={'normal'} styleComponent={'secondary'}  />
 
                     <MUISuperInputText value={text}
                                        onChangeText={setText}
@@ -87,12 +84,25 @@ function HW4() {
                                        margin={'normal'}
                     />
 
-                    {/*<AlternativeSuperButton/>*/}
-                    {/*<AlternativeSuperCheckbox/>*/}
+                    <MUISuperInputText />
+
+                    -------------------------------------------------------
+
+                    <MUISuperButton />
+                    <MUISuperButton styleButton={'secondary'} />
+                    <MUISuperButton disabled />
+
+                    -------------------------------------------------------
+                    <MUISuperCheckbox checked={checked} onChangeChecked={setChecked} >
+                        text {/*some text // этот текст попадёт в children*/}
+                    </MUISuperCheckbox>
+
+                    <MUISuperCheckbox disabled color={'default'} text={'???????'} checked={true} />
+                    <MUISuperCheckbox checked={checked} onChange={testOnChange}  />
                 </div>
             <hr/>
         </div>
     )
 }
 
-export default HW4
+export default HW4;
