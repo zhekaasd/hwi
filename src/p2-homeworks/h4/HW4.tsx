@@ -88,9 +88,11 @@ function HW4() {
 
                     -------------------------------------------------------
 
-                    <MUISuperButton />
-                    <MUISuperButton styleButton={'secondary'} />
-                    <MUISuperButton disabled />
+                    <MUISuperButton> Primary </MUISuperButton>
+                    <MUISuperButton onClick={showAlert} styleButton={'primary'} >
+                        Secondary
+                    </MUISuperButton>
+                    <MUISuperButton disabled> Disabled </MUISuperButton>
 
                     -------------------------------------------------------
                     <MUISuperCheckbox checked={checked} onChangeChecked={setChecked} >

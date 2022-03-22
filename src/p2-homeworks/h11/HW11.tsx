@@ -3,6 +3,7 @@ import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 
 import s from "./HW11.module.css";
+import MUISuperRange from "./common/c7-SuperRange/MUISuperRange";
 
 function HW11() {
     const [value1, setValue1] = useState(0)
@@ -43,8 +44,8 @@ function HW11() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
+            <MUISuperRange value={value1} onChangeRange={setValue1}
+                           widthRange={'small'} sizeRange={300}  />
             <hr/>
         </div>
     )

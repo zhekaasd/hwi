@@ -11,6 +11,7 @@ function Clock() {
     const stop = () => {
         clearInterval(timerId);
     }
+
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {

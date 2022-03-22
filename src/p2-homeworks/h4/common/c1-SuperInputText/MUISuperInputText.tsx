@@ -17,27 +17,7 @@ type MUIInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & { // и + е�
     styleComponent?: string
 }
 
-/*--- Default style input component ---*/
-const Default = styled(TextField)({
-    '& label.Mui-focused': {
-        color: 'green',
-    },
-    '& .MuiOutlinedInput-root': {
-        // input default border color
-        '& fieldset': {
-            borderColor: 'darkgray'
-        },
-        '&:hover fieldset': {
-        // input default hover style
-            borderColor: 'black'
-        },
-        '&.Mui-focused fieldset': {
-        // input default focus style
-            borderColor: 'black',
-            borderWidth: '3px'
-        },
-    },
-});
+
 
 
 
@@ -65,6 +45,29 @@ const MUISuperInputText: React.FC<MUIInputTextPropsType> = (
         && e.key === 'Enter' // и если нажата кнопка Enter
         && onEnter() // то вызвать его
     }
+
+
+    /*--- Default style input component ---*/
+    const Default = styled(TextField)({
+        '& label.Mui-focused': {
+            color: 'green',
+        },
+        '& .MuiOutlinedInput-root': {
+            // input default border color
+            '& fieldset': {
+                borderColor: !error ? 'darkgray' : ''
+            },
+            '&:hover fieldset': {
+                // input default hover style
+                borderColor: !error ? 'black' : ''
+            },
+            '&.Mui-focused fieldset': {
+                // input default focus style
+                borderColor: !error ? 'black' : '',
+                borderWidth: '3px'
+            },
+        },
+    });
 
 
     return (

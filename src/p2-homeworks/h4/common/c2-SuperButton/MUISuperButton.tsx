@@ -22,12 +22,11 @@ const SecondaryButton = styled(Button)<ButtonProps>(({ theme }) => ({
 }));
 
 
-
 // тип пропсов обычной кнопки, children в котором храниться название кнопки там уже описан
 type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 type MUIButtonPropsType = DefaultButtonPropsType & {
-    styleButton?: string
+    styleButton?: 'primary'
 }
 
 const MUISuperButton: React.FC<MUIButtonPropsType> = ({styleButton, ...restProps}) => {
@@ -36,8 +35,8 @@ const MUISuperButton: React.FC<MUIButtonPropsType> = ({styleButton, ...restProps
         <>
             {
                 !styleButton ?
-                    <PrimaryButton disabled={restProps.disabled}> {restProps.children} </PrimaryButton>
-                        : <SecondaryButton> {restProps.children} </SecondaryButton>
+                    <PrimaryButton onClick={restProps.onClick} disabled={restProps.disabled}> {restProps.children} </PrimaryButton>
+                        : <SecondaryButton onClick={restProps.onClick}> {restProps.children} </SecondaryButton>
             }
         </>
     )
